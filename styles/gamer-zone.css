@@ -9,8 +9,7 @@
 }
 
 .btn-primary {
-    padding: 21px 40px;
-    justify-content: right;
+    padding: 18px 30px;
     gap: 10px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
@@ -80,16 +79,18 @@ header nav ul {
 .banner {
     height: 540px;
     display: flex;
-    /* justify-content: center; */
-    gap: 0px;
+    justify-content: center;
+    gap: 140px;
     align-items: center;
 }
 
+/* 
 .banner-content {
-    background-image: url("../images/Group 14.png");
+    background: url("../images/Group 14.png");
     height: 100%;
     width: 100%;
-}
+    background-image: cover;
+} */
 
 .banner-content h2 {
     color: #0B0223;
@@ -122,9 +123,17 @@ header nav ul {
     margin: 7px 0px;
 }
 
+.t3 {
+    margin-bottom: 30px;
+}
+
 .banner>img {
-    background-color: transparent;
     width: 40%;
+}
+
+.go-rouge {
+    border-radius: 48px;
+    background: #4EC5F7;
 }
 
 /* we gamer section */
@@ -132,11 +141,14 @@ header nav ul {
 .we-gamer {
     height: 560px;
     display: flex;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    align-items: center;
 }
 
 .we-gamer img {
-    width: 60%;
-    height: 60%;
+    width: 40%;
+    /* height: 40%; */
+    margin-left: 60px;
 }
 
 .we-gamer h2 {
@@ -177,4 +189,79 @@ header nav ul {
     font-style: normal;
     font-weight: 700;
     line-height: 45px;
+}
+
+.we-content .btn-primary {
+    margin-left: 360px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.we-content {
+    width: 550px;
+}
+
+/* Funny Videos */
+
+.card-container {
+    display: flex;
+    gap: 0px;
+    /* width: 600px; */
+    justify-content: center;
+}
+
+.card1, .card2, .card3, .card4 {
+    /* width: 200px; */
+    /* border: 2px solid tomato; */
+}
+
+#p1,
+#p2,
+#p3,
+#p4 {
+    width: 320px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.funny-videos h2 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.funny-videos h2 section {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    display: inline;
+}
+
+.funny-videos p {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+/* play instantly */
+
+#ins2 {
+    width: 40%;
+}
+
+#ins1 {
+    width: 20%;
+    position: relative;
+    top: 100px;
+    left: 150px;
 }
