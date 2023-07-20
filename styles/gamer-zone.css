@@ -236,8 +236,8 @@ header nav ul {
     /* background-color: #0B0223; */
     cursor: pointer;
     opacity: 70%;
-    /* background-color: #0B0223; */
-    content: 
+    color: #0B0223;
+    
 }
 
 #p1,
@@ -418,7 +418,25 @@ footer p {
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        background: #FFF;
+    box-shadow: none;
+    height: 300px;
+    }
+
+    /* .logo {
+        margin-left: 300px;
+    } */
+
+    nav ul{
+        flex-direction: column;
+        /* margin-left: 400px; */
+    }
+
     
+
+
 }
 
 /* Responsive for tablet */
