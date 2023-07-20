@@ -77,6 +77,9 @@ header nav ul {
 /* banner styles */
 
 .banner {
+    background-image: url("../images/Group 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 540px;
     display: flex;
     justify-content: center;
@@ -204,25 +207,48 @@ header nav ul {
 /* Funny Videos */
 
 .card-container {
-    display: flex;
-    gap: 0px;
-    /* width: 600px; */
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* gap: 10px; */
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.card1, .card2, .card3, .card4 {
-    /* width: 200px; */
-    /* border: 2px solid tomato; */
+
+.card-container img {
+    width: 80%;
+}
+
+
+/* .img-container {
+    width: 60px;
+    height: 100px;
+    border: 2px solid red;
+} */
+
+
+
+.card-container img:hover {
+    border: 3px solid #FF42A5;
+    border-radius: 13px;
+    /* background-color: #0B0223; */
+    cursor: pointer;
+    opacity: 70%;
+    /* background-color: #0B0223; */
+    content: 
 }
 
 #p1,
 #p2,
 #p3,
 #p4 {
-    width: 320px;
-    padding: 0;
-    margin: 0;
+    width: 250px;
+    padding-top: 10px;
     text-align: left;
+    font-size: 16px;
+    /* display: inline; */
 }
 
 .funny-videos h2 {
@@ -243,7 +269,7 @@ header nav ul {
     display: inline;
 }
 
-.funny-videos p {
+.funny-videos>p {
     color: #534C64;
     text-align: center;
     font-size: 18px;
@@ -255,13 +281,148 @@ header nav ul {
 
 /* play instantly */
 
+.play-instantly {
+    display: flex;
+    margin-top: 100px;
+}
+
+.instant-text {
+    width: 400px;
+    margin: 100px 0px 100px 150px;
+
+}
+
+.instant-text h2 {
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.instant-text h2 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instant-text p {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.instant-img {
+    padding-left: 0px;
+    margin: 0;
+}
+
 #ins2 {
-    width: 40%;
+    width: 50%;
 }
 
 #ins1 {
     width: 20%;
     position: relative;
-    top: 100px;
-    left: 150px;
+    top: 70px;
+    left: 100px;
+}
+
+/* Choice Section */
+
+.choice-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choice p {
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 5px;
+}
+
+.choice:hover{
+    border-color: #F948B2;
+}
+
+.choice:hover p {
+    color: #F948B2;
+}
+
+/* footer styles */
+
+footer {
+    background: #0B0223;
+    text-align: center;
+}
+
+.ftr>h3 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.ftr {
+    margin: 0;
+    padding: 80px;
+    padding-left: 520px;
+    padding-bottom: 50px;
+}
+
+footer ul {
+    list-style: none;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.transp {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer p {
+    padding-bottom: 100px;
+}
+
+
+/* Responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    
+}
+
+/* Responsive for tablet */
+
+@media screen and (max-width: 576px) and (min-width: 960px){
+    
 }
